@@ -20,7 +20,7 @@ class Book {
         <td>${book.titre}</td>
         <td>${book.auteur}</td>
         <td>${book.annee}</td>
-        <td><button class="delete">X</button></td>`;
+        <td><button class="delete">X</button></td>`
 
         bookLIst.appendChild(row)
         
@@ -80,10 +80,10 @@ bookForm.addEventListener('submit', (e) => {
         book.showAlert("Livre ajouté", "success")
     }
 
-    // ajout à la liste l'objet créé
-    book.addBookToList(book)
-    // clear les champs après envoi
-    book.clearFields()
+    // // ajout à la liste l'objet créé
+    // book.addBookToList(book)
+    // // clear les champs après envoi
+    // book.clearFields()
 })
 
 // bookList = tbody. Si on clique dessus et que la target à la calsse delete alors on remove son grand père qui est <tr>
